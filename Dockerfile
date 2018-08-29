@@ -37,5 +37,5 @@ RUN add-apt-repository "deb [arch=amd64] http://packages.confluent.io/deb/3.3 st
 RUN apt-get update && apt-get install -y confluent-platform-2.11 librdkafka-dev
 
 # Other Python Requirements
-COPY src/requirements.txt .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
